@@ -1,135 +1,26 @@
 import os
 import json
+from dataset.dataset import Dataset, Image, Annotation
 
-class Annotation:
-    def __init__(self, json_data):
-        self.json_data = json_data 
-        self.process_category()
+def get_all_categories(dataset):
+    categories = set()
+    for annotation in dataset.get_all_annotations():
+        category = annotation.get_category()
+        categories.add(category)
+    return categories
 
-    def process_category(self):
-        category = self.json_data["category"]
-        new_category = category.strip().lower()
-        self.json_data["category"] = new_category
-    
-    def get_caption(self):
-        return self.json_data["caption"]
-    
-    def get_category(self):
-        return self.json_data["category"]
-    
-    def get_id(self):
-        return self.json_data["id"]
-    
-    def get_image_id(self):
-        return self.json_data["image_id"]
-    
-    def get_area(self):
-        return self.json_data["bbox"][3] * self.json_data["bbox"][2]
-    
-    def get_category_id(self):
-        return self.json_data["category_id"]
-    
-    def set_category_id(self, category_id):
-        self.json_data["category_id"] = category_id
+def define_category_id(dataset):
+    categories = get_all_categories(dataset)
+    categories = sorted(list(categories))
+    category_map = {category: i for i, category in enumerate(categories)}
 
-    def set_category(self, category):
-        self.json_data["category"] = category
+    for annotation in dataset.get_all_annotations():
+        category = annotation.get_category()
+        category_id = category_map[category]
+        annotation.set_category_id(category_id)
 
-    def set_caption(self, caption):
-        self.json_data["caption"] = caption
-    
-class Image:
-    def __init__(self, image_data, anno_datas):
-        self.json_data = image_data
-        self.annotations = [Annotation(anno_data) for anno_data in anno_datas]
+    return dataset
 
-    def get_annotations(self):
-        return self.annotations
-    
-    def set_annotations(self, annotations):
-        self.annotations = annotations
-
-    def add_annotation(self, annotation):
-        self.annotations.append(annotation)
-        
-    def get_filename(self):
-        return self.json_data["file_name"] 
-    
-    def get_id(self):
-        return self.json_data["id"]
-    
-
-class Dataset:
-    def __init__(self, json_data):
-        self.images = []
-        self.categories = json_data["categories"]
-        for image_data in json_data["images"]:
-            image_id = image_data["id"]
-            anno_datas = [anno_data for anno_data in json_data["annotations"] if anno_data["image_id"] == image_id]
-            self.images.append(Image(image_data, anno_datas))
-
-    def get_all_categories(self):
-        categories = set()
-        for annotation in self.get_all_annotations():
-            category = annotation.get_category()
-            categories.add(category)
-        return categories
-    
-    def define_category_id(self):
-        categories = self.get_all_categories()
-        categories = sorted(list(categories))
-        category_map = {category: i for i, category in enumerate(categories)}
-
-        for annotation in self.get_all_annotations():
-            category = annotation.get_category()
-            category_id = category_map[category]
-            annotation.set_category_id(category_id)
-
-        
-
-    def rearange_ids(self):
-        # Rearrange annotation ids
-        for i, anno in enumerate(self.get_all_annotations()):
-            anno.json_data["id"] = i + 1
-        
-        # Rearrange image ids and the corresponding annotation ids
-        for i, image in enumerate(self.images):
-            image.json_data["id"] = i + 1
-            for anno in image.get_annotations():
-                anno.json_data["image_id"] = i + 1
-
-    def get_images(self):
-        return self.images
-    
-    def set_images(self, images):
-        self.images = images
-
-    def get_all_annotations(self):
-        return [anno for image in self.images for anno in image.get_annotations()]
-    
-    def append_dataset(self, dataset):
-        for image in dataset.get_images():
-            my_image = self.get_image(image.get_filename())
-            if my_image is None:
-                pass
-                # Do not add the image with only small bbox
-                # self.images.append(image)
-            else:
-                for annotation in image.get_annotations():
-                    my_image.add_annotation(annotation)
-    
-    def get_image(self, filename):
-        for image in self.images:
-            if image.get_filename() == filename:
-                return image
-        return None
-    
-    def to_json(self):
-        return {
-            "images": [image.json_data for image in self.images],
-            "annotations": [anno.json_data for image in self.images for anno in image.get_annotations()]
-        }
-    
 def process_category(dataset):
     refine_map = {
         "moray eels": "moray eel",
@@ -247,6 +138,10 @@ def process_caption(dataset):
         new_caption = caption.strip()
         new_caption = new_caption.replace("  ", " ")
         annotation.set_caption(new_caption)
+
+        if annotation.is_small_bbox():
+            annotation.set_caption("")
+
     return dataset
 
 def category_analysis(dataset, output_path):
@@ -287,16 +182,17 @@ def main(json_path):
     dataset = process_caption(dataset)
 
     # Rearrange the category id
-    dataset.define_category_id()
+    dataset = define_category_id(dataset)
 
-    category_analysis(dataset, "category_analysis.txt")
+    category_analysis(dataset, "./data/category_analysis.txt")
 
     print(f"There are in total {len(dataset.get_images())} images and {len(dataset.get_all_annotations())} annotations in the combined dataset.")
     output_path = json_path.replace(".json", "_processed.json")
     with open(output_path, 'w', encoding="utf-8") as f:
+        print(f"Writing to {output_path}")
         json.dump(dataset.to_json(), f)
 
 
 if __name__ == "__main__":
-    json_path = "../combine.json"
+    json_path = "./data/combined.json"
     main(json_path)
