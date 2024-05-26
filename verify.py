@@ -62,6 +62,7 @@ def check_segmentation(dataset):
     for annotation in dataset.get_all_annotations():
         if annotation.get_segmentation() != []:
             print(f"At annotation id {annotation.get_id()}, segmentation is not empty.")
+
 def check_caption(dataset):
     print("Checking caption...")
 
@@ -92,6 +93,15 @@ def check_caption(dataset):
         if not have_caption:
             print(f"At image id {image.get_id()}, there is no caption.")
         
+    return True
+
+def check_double_space(dataset):
+    print("Checking double space...")
+    for image in dataset.get_images():
+        for annotation in image.get_annotations():
+            caption = annotation.get_caption()
+            if "  " in caption:
+                print(f"At annotation id {annotation.get_id()}, caption contains double space.")
     return True
 
 def main(json_path):

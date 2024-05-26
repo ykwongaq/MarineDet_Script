@@ -168,6 +168,18 @@ def category_analysis(dataset, output_path):
         for category_id, (category, count) in category_count.items():
             f.write(f"{category_id};{category};{count}\n")
 
+def rearrange_ids(dataset):
+    # Rearrange annotation ids
+    for i, anno in enumerate(dataset.get_all_annotations()):
+        anno.json_data["id"] = i + 1
+    
+    # Rearrange image ids and the corresponding annotation ids
+    for i, image in enumerate(dataset.get_images()):
+        image.json_data["id"] = i + 1
+        for anno in image.get_annotations():
+            anno.json_data["image_id"] = i + 1
+
+    return dataset
 
 def main(json_path):
 
@@ -183,7 +195,7 @@ def main(json_path):
 
     # Rearrange the category id
     dataset = define_category_id(dataset)
-
+    dataset = rearrange_ids(dataset)
     category_analysis(dataset, "./data/category_analysis.txt")
 
     print(f"There are in total {len(dataset.get_images())} images and {len(dataset.get_all_annotations())} annotations in the combined dataset.")
