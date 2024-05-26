@@ -26,6 +26,9 @@ class Annotation:
     def get_area(self):
         return self.json_data["bbox"][3] * self.json_data["bbox"][2]
     
+    def is_small_bbox(self):
+        return self.get_area() < 1024
+    
     def get_category_id(self):
         return self.json_data["category_id"]
     
@@ -37,6 +40,12 @@ class Annotation:
 
     def set_caption(self, caption):
         self.json_data["caption"] = caption
+
+    def get_segmentation(self):
+        return self.json_data["segmentation"]
+    
+    def set_segmentation(self, segmentation):
+        self.json_data["segmentation"] = segmentation
     
 class Image:
     def __init__(self, image_data, anno_datas):
@@ -62,41 +71,11 @@ class Image:
 class Dataset:
     def __init__(self, json_data):
         self.images = []
-        self.categories = json_data["categories"]
         for image_data in json_data["images"]:
             image_id = image_data["id"]
             anno_datas = [anno_data for anno_data in json_data["annotations"] if anno_data["image_id"] == image_id]
             self.images.append(Image(image_data, anno_datas))
 
-    def get_all_categories(self):
-        categories = set()
-        for annotation in self.get_all_annotations():
-            category = annotation.get_category()
-            categories.add(category)
-        return categories
-    
-    def define_category_id(self):
-        categories = self.get_all_categories()
-        categories = sorted(list(categories))
-        category_map = {category: i for i, category in enumerate(categories)}
-
-        for annotation in self.get_all_annotations():
-            category = annotation.get_category()
-            category_id = category_map[category]
-            annotation.set_category_id(category_id)
-
-        
-
-    def rearange_ids(self):
-        # Rearrange annotation ids
-        for i, anno in enumerate(self.get_all_annotations()):
-            anno.json_data["id"] = i + 1
-        
-        # Rearrange image ids and the corresponding annotation ids
-        for i, image in enumerate(self.images):
-            image.json_data["id"] = i + 1
-            for anno in image.get_annotations():
-                anno.json_data["image_id"] = i + 1
 
     def get_images(self):
         return self.images
