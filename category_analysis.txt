@@ -30,660 +30,641 @@
 29;arrow crab;45
 30;astropyga radiata;49
 31;atlantic blue crab;66
-32;atlantic blue marlin;1
-33;atlantic bluefin;1
-34;atlantic triton;31
-35;aurelia aurita;99
-36;aurelia coerulea;69
-37;aurelia labiata;82
-38;australian lungfish;66
-39;balaenoptera acutorostrata;11
-40;bamboo shark;48
-41;banded sea krait;10
-42;banggai cardinalfish;23
-43;bare-tailed goatfish;26
-44;barnacle;111
-45;barracuda;47
-46;barramundi co;11
-47;barredfin morays;10
-48;barrel sponge;43
-49;barreleye;28
-50;basket star;36
-51;basking shark;36
-52;bass;34
-53;basslet;87
-54;batfish;70
-55;beaked coral fish;11
-56;bearded scorpionfish;9
-57;beluga whale;88
-58;benthic cnidarian;1
-59;bichir;61
-60;bicolor cleaner wrasse;15
-61;bigeye;167
-62;bigeye tuna;29
-63;bigfin reef squid;15
-64;bighead gurnard;23
-65;bittium reticulatum;68
-66;black dragonfish;42
-67;black ghost knifefish;73
-68;black marlin;28
-69;black rock shark;15
-70;black sea bass;50
-71;black swallower;39
-72;black-blotched porcupinefish;10
-73;blackfin tuna;45
-74;blacknose shark;36
-75;blackspotted puffer;10
-76;blacktip grouper;11
-77;blacktip reef shark;102
-78;blanket octopus;36
-79;blenny;41
-80;blue crab;52
-81;blue land crab;15
-82;blue marlin;22
-83;blue ring angelfish;10
-84;blue tang fish;20
-85;blue triggerfish;10
-86;blue whale;31
-87;blue whiting;189
-88;blue-ringed octopus;43
-89;bluefin trevally;61
-90;bluefin tuna;36
-91;bluegill;30
-92;bluespotted cornetfish;10
-93;bluespotted ribbontail ray;25
-94;bluestreak cleaner wrasse;10
-95;bobtail squid;22
-96;bohadschia marmorata;29
-97;bonito tuna;210
-98;bottlenose dolphin;47
-99;bowfin;28
-100;box jellyfish;37
-101;boxfish;17
-102;brain coral;24
-103;brittle star;25
-104;bryozoa;3
-105;bubble coral;29
-106;bubble eye goldfish;18
-107;bubble tip anemone;56
-108;bull shark;43
-109;bullhead;26
-110;butterfly goldfish;24
-111;butterflyfish;29
-112;callinectes sapidus;10
-113;calliostoma zizyphinum;32
-114;callorhinus ursinus;113
-115;cancer irroratus;10
-116;cancer pagurus;12
-117;carassius auratus;13
-118;carcharodon carcharias;10
-119;cardinalfish;23
-120;cardisoma crab;24
-121;caridina multidentata;15
-122;carp;33
-123;carpet anemone;39
-124;carpet shark;16
-125;carybdea marsupialis;32
-126;cassiopea andromeda;47
-127;catfish;42
-128;celestial goldfish;35
-129;cerithium vulgatum;33
-130;chambered nautilus;26
-131;cheeklined wrasse;10
-132;cheilinus undulatus;10
-133;chelonia mydas;36
-134;chelydra serpentina;30
-135;chicoreus ramosus;36
-136;chimaera;20
-137;chimera monstrosa;1
-138;chionoecetes opilio;13
-139;chlamys islandica;43
-140;christmas tree worm;81
-141;chromis;58
-142;chrysaora fuscescens;47
-143;chrysaora melanaster;36
-144;clam;98
-145;clark's anemonefish;13
-146;cleaner shrimp;40
-147;cleaner wrasse;11
-148;clown anemonefis;11
-149;clown frogfish;24
-150;clown tang fish;28
-151;clown triggerfish;35
-152;clown wrasse;30
-153;clownfish;62
-154;cobia;13
-155;coconut crab;53
-156;coconut octopus;28
-157;cod;2
-158;coelacanth;40
-159;comaster schlegelii;11
-160;comb jelly;26
-161;conch;47
-162;concholepa;56
-163;conge;27
-164;conger eel;23
-165;conomurex luhuanus;37
-166;conus marmoreus;25
-167;cookiecutter shark;20
-168;copperband butterflyfish;12
-169;coral;3978
-170;coral banded shrimp;25
-171;coral grouper;28
-172;coral reef;3
-173;coral reef shrimp;23
-174;cornetfish;26
-175;corydoras aeneus;21
-176;coryphaena hippurus;10
-177;cotylorhiza tuberculata;38
-178;cow-nose ray;38
-179;crab;97
-180;crappie;57
-181;crassostrea gigas;113
-182;crassostrea sikamea;29
-183;crinoid;13
-184;croaker;31
-185;crown-of-thorns starfish;146
-186;crowntail betta;17
-187;crustaceans;13
-188;crystal jellyfish;159
-189;cucumaria frondosa;33
-190;cushion star;35
-191;cusk;18
-192;cuttlefish;59
-193;cyanea capillata;37
-194;cyanea lamarckii;41
-195;cymbiola vespertilio;36
-196;cypraea annulus;21
-197;cypraea aurantium;26
-198;cypraea caurica;29
-199;cypraea cribraria;29
-200;cypraea erosa;22
-201;cypraea histrio;19
-202;cypraea mappa;28
-203;cypraea moneta;133
-204;cypraea onyx;16
-205;cypraea pantherina;14
-206;cypraea talpa;56
-207;cypraea tigris;22
-208;cypraea vitellus;36
-209;cypraea zebra;20
-210;cyprinus carpio;49
-211;damsel fish;76
-212;day octopus;10
-213;decorator crab;50
-214;deep-sea dragonfish;37
-215;delphinapterus leucas;13
-216;delphinus delphis;40
-217;delta tail betta;18
-218;dendronephthya;30
-219;dermochelys coriacea;35
-220;devil ray;82
-221;devil scorpionfish;10
-222;diadema antillarum;76
-223;dogfish;98
-224;dogfish shark;23
-225;dolphin;76
-226;doryteuthis opalescens;40
-227;dosidicus gigas;33
-228;dottyback;59
-229;dragonet;31
-230;dragonfish;42
-231;drumfish;48
-232;drymonema dalmatinum;23
-233;dugong;59
-234;dungeness crab;106
-235;durban hinge-beak shrimp;30
-236;eagle ray;79
-237;echidna nebulosa;34
-238;echinometra mathaei;36
-239;echinus esculentus;42
-240;eel;103
-241;eggs;7
-242;electric eel;24
-243;electric ray;20
-244;elephant ear sponge;29
-245;elephant fish;51
-246;ember parrotfish;10
-247;emperor angelfish;77
-248;emperor fish;73
-249;emys orbicularis;42
-250;encrusting sponge;44
-251;enteroctopus dofleini;25
-252;epinephelus marginatus;10
-253;epitonium clathrus;41
-254;epitonium scalare;28
-255;eretmochelys imbricata;35
-256;erignathus barbatus;33
-257;eriocheir sinensis;10
-258;esox lucius;11
-259;euchelus asper;36
-260;eudyptes chrysolophus;97
-261;eudyptes robustus;125
-262;eudyptes schlegeli;81
-263;eudyptula minor;60
-264;eumetopias jubatus;184
-265;european green crab;57
-266;fan worm;42
-267;fangtooth fish;44
-268;feather duster worm;136
-269;feather star;47
-270;fiddler crab;34
-271;filefish;16
-272;fimbriated moray;11
-273;finback;1
-274;fire coral;19
-275;firefish;27
-276;firefly squid;39
-277;fireworm;19
-278;fish;2699
-279;fish storm;4
-280;flame scallop;50
-281;flashlight fish;67
-282;flat needlefish;23
-283;flatfish;17
-284;flathead;30
-285;flatworm;16
-286;flounder;40
-287;freshwater mussel;170
-288;frilled shark;33
-289;frogfish;1
-290;fur seal;9
-291;fusinus colus;49
-292;gadus morhua;17
-293;giant frogfish;10
-294;giant manta ray;10
-295;giant moray;10
-296;giant trevally;15
-297;goatfish;140
-298;goblin shark;24
-299;goby;21
-300;goby fish;1
-301;goldfish;11
-302;gonatus fabricii;20
-303;gorgonian coral;12
-304;graeffe's sea cucumber;10
-305;grampus griseus;46
-306;great barracuda;11
-307;great white shark;19
-308;green sea turtle;26
-309;green shore crab;5
-310;green turtle;10
-311;grey reef shark;63
-312;grouper;10
-313;gudgeon;16
-314;guillimot;6
-315;guitarfish;23
-316;gulper eel;8
-317;gulper shark;14
-318;gurnard;21
-319;gymnothorax javanicus;33
-320;hagfish;20
-321;hake;2
-322;halfmoon;8
-323;halibut;33
-324;halichoerus grypus;58
-325;halocaridina rubra;46
-326;hammerhead shark;19
-327;handfish;19
-328;harlequin shrimp;47
-329;harlequin sweetlip;10
-330;harpiosquilla harpax;34
-331;hatchetfish;13
-332;hawkfish;27
-333;heliocidaris tuberculata;57
-334;hermit crab;14
-335;heteroconger hassi;66
-336;hippocampus abdominalis;43
-337;hippocampus whitei;35
-338;histioteuthis reversa;15
-339;honeycomb morays;17
-340;horn-nosed boxfish;10
-341;horned bannerfish;11
-342;horrid elbow crab;10
-343;humpback;1
-344;humphead wrasse;9
-345;hydrocynus vittatus;12
-346;hydrurga leptonyx;36
-347;ictalurus punctatus;11
-348;indian ocean oriental sweetlips;70
-349;indo-pacific sergeant;17
-350;jellyfish;211
-351;john dory;35
-352;killer whale;2
-353;kind crab;1
-354;kingfish;54
-355;koi fish;9
-356;lagenodelphis hosei;74
-357;lampfish;34
-358;lamprey;48
-359;lantern fish;34
-360;lantern shark;16
-361;large shark;1
-362;largemouth bass;49
-363;leafy sea dragon;48
-364;leatherback sea turtle;46
-365;lemon shark;54
-366;leopard shark;38
-367;lion's mane jellyfish;36
-368;lionfish;32
-369;little tunny;21
-370;lizardfish;20
-371;lobodon carcinophagus;51
-372;lobster;30
-373;loggerhead sea turtle;22
-374;long-finned pike;49
-375;longfin eel;38
-376;longlegged spiny lobster;11
-377;longnose batfish;24
-378;lontra canadensis;1
-379;loosejaw;11
-380;mackerel shark;17
-381;macrobrachium rosenbergii;12
-382;magnificent sea anemone;40
-383;mahi-mahi;12
-384;maja squinado;11
-385;mako shark;18
-386;malabar grouper;10
-387;manatee;83
-388;manta ray;69
-389;mantis shrimp;53
-390;many spotted sweetlip;17
-391;map puffer;10
-392;marlin;36
-393;marsh crab;50
-394;maurolicus;41
-395;mediterranean jellyfish;117
-396;megadyptes antipodes;47
-397;megalodon;1
-398;megamouth shark;39
-399;megaptera novaeangliae;14
-400;menhaden;71
-401;meyer's butterflyfish;51
-402;mimic octopus;41
-403;minke whale;1
-404;mirounga angustirostris;82
-405;mobula ray;141
-406;mole crab;86
-407;monachu;32
-408;monodon monoceros;28
-409;moon jellyfish;289
-410;moorish idol;157
-411;moray eel;56
-412;moringa eel;44
-413;mud crab;88
-414;mugil cephalus;79
-415;mushroom leather coral;10
-416;mussel;483
-417;napolean wrasse;53
-418;narwhal;1
-419;nautilus;38
-420;needlefish;68
-421;neophoca cinerea;58
-422;nudibranch;45
-423;nurse shark;83
-424;oarfish;40
-425;ocean sunfish;40
-426;ocellaris clownfish;10
-427;ocellate phyllidia;10
-428;octopus;48
-429;octopus cyanea;29
-430;octopus maorum;25
-431;octopus marginatus;27
-432;octopus mimus;12
-433;octopus tetricus;34
-434;odontodactylus scyllarus;34
-435;olindias formosa;42
-436;oliva porphyria;25
-437;oncorhynchus kisutch;50
-438;oncorhynchus mykiss;43
-439;orca;62
-440;orcinus orca;15
-441;oreochromis niloticus;17
-442;ornate spiny lobster;23
-443;osteoglossum bicirrhosum;12
-444;ostrea edulis;54
-445;otaria flavescens;122
-446;otter;1
-447;oyster;382
-448;pacific bluefin;1
-449;paddlefish;99
-450;pagophilus groenlandicus;60
-451;pagrus major;15
-452;painted spiny lobster;11
-453;palechin morays;13
-454;palinurus delagoae;30
-455;panulirus argus;35
-456;panulirus interruptus;51
-457;panulirus ornatus;30
-458;parastichopus parvimensis;21
-459;parrotfish;59
-460;patinopecten yessoensis;96
-461;peacock mantis shrimp;57
-462;pearsonothuria graeffei;31
-463;pecten maximus;175
-464;pederson cleaner shrimp;49
-465;pegasus sea moth;41
-466;pelagia noctiluca;36
-467;pencil sea urchin;40
-468;perca flavescens;24
-469;perch;45
-470;physalia physalis;53
-471;pike;45
-472;pilchard;121
-473;pink anemone fish;15
-474;pinnate batfish;10
-475;pipefish;51
-476;pistol shrimp;34
-477;pizza anemone;10
-478;plaice;41
-479;plankto;10
-480;planospira scalaris;16
-481;pleurotomaria mammilla;13
-482;pomacanthus imperator;10
-483;porcelain crab;47
-484;porcupinefish;52
-485;port jackson shark;57
-486;portuguese man o' war;52
-487;portunus trituberculatus;30
-488;potato grouper;11
-489;powder blue tang fish;184
-490;predatory sharks;12
-491;pterois volitans;10
-492;pufferfish;29
-493;pumpkinseed sunfish;1
-494;purple shore crab;9
-495;pygmy seahorse;21
-496;pygoscelis adeliae;90
-497;pygoscelis antarcticus;92
-498;pygoscelis papua;118
-499;ray;6
-500;razor clam;72
-501;razorfish;131
-502;red king crab;8
-503;red lionfish;11
-504;red snapper;50
-505;red tailed butterfly fish;25
-506;redtail butterflyfish;6
-507;regal tang fish;22
-508;rhinomuraena quaesita;36
-509;rhizostoma pulmo;49
-510;rhopilema esculentum;79
-511;ribbon eel;22
-512;ribbonfish;42
-513;right whale;1
-514;sabellidae;1
-515;saccostrea cucullata;64
-516;sailfish;2
-517;salmo salar;36
-518;salp;3
-519;salvelinus fontinalis;10
-520;sawshark;23
-521;scaleless dragonfish;1
-522;scallop;5
-523;scorpionfish;26
-524;sculpin;27
-525;sea anemone;567
-526;sea bass;12
-527;sea cucumber;26
-528;sea fan;65
-529;sea fans;1
-530;sea grape;1
-531;sea hare;4
-532;sea nettle;3
-533;sea robin;2
-534;sea slug;31
-535;sea snail;23
-536;sea snake;1
-537;sea spider;2
-538;sea star;53
-539;sea turtle;33
-540;sea urchin;308
-541;sea whip;189
-542;sea worm;1
-543;sea ​​anemone;8
-544;seadragon;31
-545;seagrape;1
-546;seagrass;1
-547;seagull;11
-548;seahorse;30
-549;seal;10
-550;sealion;2
-551;seashell;30
-552;seaweed;26
-553;sepia latimanus;49
-554;sepia officinalis;39
-555;sepiola atlantica;42
-556;sepioloidea lineolata;44
-557;sepioteuthis australis;63
-558;sepioteuthis lessoniana;50
-559;sepioteuthis sepioidea;51
-560;sergeant major;58
-561;serranidae;28
-562;seven-gill shark;27
-563;shark;76
-564;sharksucker;11
-565;shrimp;126
-566;shrimp goby;23
-567;shrimpfish;101
-568;sixgill shark;30
-569;skipjack tuna;73
-570;skunk clownfish;13
-571;sleeper goby;68
-572;sleeper shark;51
-573;slipper lobster;81
-574;small marine creatures;12
-575;small swimming crab;10
-576;smallmouth bass;60
-577;smooth shore crab;23
-578;snake eel;37
-579;snake pipefish;46
-580;snake-like morays;10
-581;snakehead;1
-582;snapper;141
-583;snapping turtle;4
-584;snow crab;51
-585;soft coral;72
-586;soldierfish;280
-587;sole;11
-588;sousa chinensis;35
-589;south american lungfish;40
-590;southern bluefin;1
-591;spaghetti eel;26
-592;sperm whale;65
-593;spheniscus magellanicus;75
-594;spider crab;50
-595;spiny eel;33
-596;spiny lobster;48
-597;sponge;110
-598;sponge coral;5
-599;sponge crab;10
-600;spot-fin porcupinefish;10
-601;spotfin lionfish;10
-602;spotted eagle rays;14
-603;spotted sharpnose puffer;10
-604;squat lobster;41
-605;squid;62
-606;squilla empusa;27
-607;squirrelfish;38
-608;staghorn coral;55
-609;starfish;137
-610;stargazer fish;19
-611;starry flounder;17
-612;stenella coeruleoalba;57
-613;steno bredanensis;52
-614;stichopus chloronotus;28
-615;stingray;35
-616;stomolophus meleagris;65
-617;stone crab;18
-618;stonefish;11
-619;striped bass;40
-620;striped marlin;9
-621;strombus gigas;44
-622;strongylocentrotus franciscanus;116
-623;sturgeon;26
-624;sunfish;15
-625;surgeonfish;78
-626;swell shark;11
-627;swordfish;10
-628;symbiotic shrimp;23
-629;table coral;80
-630;teira batfish;14
-631;testudo hermanni;47
-632;thelenota ananas;39
-633;thenus orientalis;56
-634;thresher shark;17
-635;thunnus thynnus;146
-636;tiger shark;40
-637;tiger tail seahorse;10
-638;tilefish;22
-639;titan triggerfish;12
-640;tonna galea;39
-641;trachemys scripta elegans;41
-642;triggerfish;24
-643;triplefin;21
-644;trumpetfish;35
-645;tube anemone;25
-646;tube sponge;13
-647;tube-dwelling anemone;26
-648;tuna;20
-649;turbinella pyrum;70
-650;turbo marmoratus;37
-651;turbot;10
-652;turritella communis;13
-653;turtle;6
-654;uca pugnax;21
-655;unicornfish;42
-656;upside-down jellyfish;57
-657;vampire squid;5
-658;variable coral crab;11
-659;viperfish;13
-660;voluta musica;63
-661;walleye;23
-662;whale;31
-663;whale shark;84
-664;whelk;28
-665;whip coral;19
-666;white marlin;4
-667;white shark;2
-668;whitemouth morays;11
-669;whitespotted boxfish;11
-670;whitetip reef shark;77
-671;whiting;24
-672;winter flounder;3
-673;wobbegong shark;25
-674;wolf eel;24
-675;wrasse;29
-676;xenophora pallidula;33
-677;yellow boxfish;11
-678;yellow mask angelfish;11
-679;yellow mask surgeonfish;11
-680;yellow tang fish;27
-681;yellow-edged moray;14
-682;yellowfin tuna;37
-683;yellowmargin triggerfish;10
-684;zalophus californianus;62
-685;zebra crab;12
-686;zebra moray;11
-687;zebra shark;11
-688;zidona dufresnei;16
+32;atlantic triton;31
+33;aurelia aurita;99
+34;aurelia coerulea;69
+35;aurelia labiata;82
+36;australian lungfish;66
+37;balaenoptera acutorostrata;11
+38;bamboo shark;48
+39;banded sea krait;10
+40;banggai cardinalfish;23
+41;bare-tailed goatfish;26
+42;barnacle;111
+43;barracuda;47
+44;barramundi co;11
+45;barredfin morays;10
+46;barrel sponge;43
+47;barreleye;28
+48;basket star;36
+49;basking shark;36
+50;bass;34
+51;basslet;87
+52;batfish;70
+53;beaked coral fish;11
+54;bearded scorpionfish;9
+55;beluga whale;88
+56;bichir;61
+57;bicolor cleaner wrasse;15
+58;bigeye;167
+59;bigeye tuna;29
+60;bigfin reef squid;15
+61;bighead gurnard;23
+62;bittium reticulatum;68
+63;black dragonfish;42
+64;black ghost knifefish;73
+65;black marlin;28
+66;black rock shark;15
+67;black sea bass;50
+68;black swallower;39
+69;black-blotched porcupinefish;10
+70;blackfin tuna;45
+71;blacknose shark;36
+72;blackspotted puffer;10
+73;blacktip grouper;11
+74;blacktip reef shark;102
+75;blanket octopus;36
+76;blenny;41
+77;blue crab;52
+78;blue land crab;15
+79;blue marlin;22
+80;blue ring angelfish;10
+81;blue tang fish;20
+82;blue triggerfish;10
+83;blue whale;31
+84;blue whiting;189
+85;blue-ringed octopus;43
+86;bluefin trevally;61
+87;bluefin tuna;36
+88;bluegill;30
+89;bluespotted cornetfish;10
+90;bluespotted ribbontail ray;25
+91;bluestreak cleaner wrasse;10
+92;bobtail squid;22
+93;bohadschia marmorata;29
+94;bonito tuna;210
+95;bottlenose dolphin;47
+96;bowfin;28
+97;box jellyfish;37
+98;boxfish;17
+99;brain coral;24
+100;brittle star;25
+101;bryozoa;3
+102;bubble coral;29
+103;bubble eye goldfish;18
+104;bubble tip anemone;56
+105;bull shark;43
+106;bullhead;26
+107;butterfly goldfish;24
+108;butterflyfish;29
+109;callinectes sapidus;10
+110;calliostoma zizyphinum;32
+111;callorhinus ursinus;113
+112;cancer irroratus;10
+113;cancer pagurus;12
+114;carassius auratus;13
+115;carcharodon carcharias;10
+116;cardinalfish;23
+117;cardisoma crab;24
+118;caridina multidentata;15
+119;carp;33
+120;carpet anemone;39
+121;carpet shark;16
+122;carybdea marsupialis;32
+123;cassiopea andromeda;47
+124;catfish;42
+125;celestial goldfish;35
+126;cerithium vulgatum;33
+127;chambered nautilus;26
+128;cheeklined wrasse;10
+129;cheilinus undulatus;10
+130;chelonia mydas;36
+131;chelydra serpentina;30
+132;chicoreus ramosus;36
+133;chimaera;21
+134;chionoecetes opilio;13
+135;chlamys islandica;43
+136;christmas tree worm;81
+137;chromis;58
+138;chrysaora fuscescens;47
+139;chrysaora melanaster;36
+140;clam;98
+141;clark's anemonefish;13
+142;cleaner shrimp;40
+143;cleaner wrasse;11
+144;clown anemonefis;11
+145;clown frogfish;24
+146;clown tang fish;28
+147;clown triggerfish;35
+148;clown wrasse;30
+149;clownfish;62
+150;cobia;13
+151;coconut crab;53
+152;coconut octopus;28
+153;cod;2
+154;coelacanth;40
+155;comaster schlegelii;11
+156;comb jelly;26
+157;conch;47
+158;concholepa;56
+159;conge;27
+160;conger eel;23
+161;conomurex luhuanus;37
+162;conus marmoreus;25
+163;cookiecutter shark;20
+164;copperband butterflyfish;12
+165;coral;3979
+166;coral banded shrimp;25
+167;coral grouper;28
+168;coral reef;3
+169;coral reef shrimp;23
+170;cornetfish;26
+171;corydoras aeneus;21
+172;coryphaena hippurus;10
+173;cotylorhiza tuberculata;38
+174;cow-nose ray;38
+175;crab;97
+176;crappie;57
+177;crassostrea gigas;113
+178;crassostrea sikamea;29
+179;crinoid;13
+180;croaker;31
+181;crown-of-thorns starfish;146
+182;crowntail betta;17
+183;crustaceans;13
+184;crystal jellyfish;159
+185;cucumaria frondosa;33
+186;cushion star;35
+187;cusk;18
+188;cuttlefish;59
+189;cyanea capillata;37
+190;cyanea lamarckii;41
+191;cymbiola vespertilio;36
+192;cypraea annulus;21
+193;cypraea aurantium;26
+194;cypraea caurica;29
+195;cypraea cribraria;29
+196;cypraea erosa;22
+197;cypraea histrio;19
+198;cypraea mappa;28
+199;cypraea moneta;133
+200;cypraea onyx;16
+201;cypraea pantherina;14
+202;cypraea talpa;56
+203;cypraea tigris;22
+204;cypraea vitellus;36
+205;cypraea zebra;20
+206;cyprinus carpio;49
+207;damsel fish;76
+208;day octopus;10
+209;decorator crab;50
+210;deep-sea dragonfish;37
+211;delphinapterus leucas;13
+212;delphinus delphis;40
+213;delta tail betta;18
+214;dendronephthya;30
+215;dermochelys coriacea;35
+216;devil ray;82
+217;devil scorpionfish;10
+218;diadema antillarum;76
+219;dogfish;98
+220;dogfish shark;23
+221;dolphin;76
+222;doryteuthis opalescens;40
+223;dosidicus gigas;33
+224;dottyback;59
+225;dragonet;31
+226;dragonfish;42
+227;drumfish;48
+228;drymonema dalmatinum;23
+229;dugong;59
+230;dungeness crab;106
+231;durban hinge-beak shrimp;30
+232;eagle ray;79
+233;echidna nebulosa;34
+234;echinometra mathaei;36
+235;echinus esculentus;42
+236;eel;103
+237;eggs;7
+238;electric eel;24
+239;electric ray;20
+240;elephant ear sponge;29
+241;elephant fish;51
+242;ember parrotfish;10
+243;emperor angelfish;77
+244;emperor fish;73
+245;emys orbicularis;42
+246;encrusting sponge;44
+247;enteroctopus dofleini;25
+248;epinephelus marginatus;10
+249;epitonium clathrus;41
+250;epitonium scalare;28
+251;eretmochelys imbricata;35
+252;erignathus barbatus;33
+253;eriocheir sinensis;10
+254;esox lucius;11
+255;euchelus asper;36
+256;eudyptes chrysolophus;97
+257;eudyptes robustus;125
+258;eudyptes schlegeli;81
+259;eudyptula minor;60
+260;eumetopias jubatus;184
+261;european green crab;57
+262;fan worm;42
+263;fangtooth fish;44
+264;feather duster worm;137
+265;feather star;47
+266;fiddler crab;34
+267;filefish;16
+268;fimbriated moray;11
+269;fire coral;19
+270;firefish;27
+271;firefly squid;39
+272;fireworm;19
+273;fish;2700
+274;fish storm;4
+275;flame scallop;50
+276;flashlight fish;67
+277;flat needlefish;23
+278;flatfish;17
+279;flathead;30
+280;flatworm;16
+281;flounder;40
+282;freshwater mussel;170
+283;frilled shark;33
+284;frogfish;11
+285;fur seal;9
+286;fusinus colus;49
+287;gadus morhua;17
+288;giant manta ray;10
+289;giant moray;10
+290;giant trevally;15
+291;goatfish;140
+292;goblin shark;24
+293;goby;22
+294;goldfish;11
+295;gonatus fabricii;20
+296;gorgonian coral;12
+297;graeffe's sea cucumber;10
+298;grampus griseus;46
+299;great barracuda;11
+300;great white shark;19
+301;green sea turtle;26
+302;green shore crab;5
+303;green turtle;10
+304;grey reef shark;63
+305;grouper;10
+306;gudgeon;16
+307;guillimot;6
+308;guitarfish;23
+309;gulper eel;8
+310;gulper shark;14
+311;gurnard;21
+312;gymnothorax javanicus;33
+313;hagfish;20
+314;hake;2
+315;halfmoon;8
+316;halibut;33
+317;halichoerus grypus;58
+318;halocaridina rubra;46
+319;hammerhead shark;19
+320;handfish;19
+321;harlequin shrimp;47
+322;harlequin sweetlip;10
+323;harpiosquilla harpax;34
+324;hatchetfish;13
+325;hawkfish;27
+326;heliocidaris tuberculata;57
+327;hermit crab;14
+328;heteroconger hassi;66
+329;hippocampus abdominalis;43
+330;hippocampus whitei;35
+331;histioteuthis reversa;15
+332;honeycomb morays;17
+333;horn-nosed boxfish;10
+334;horned bannerfish;11
+335;horrid elbow crab;10
+336;humphead wrasse;9
+337;hydrocynus vittatus;12
+338;hydrurga leptonyx;36
+339;ictalurus punctatus;11
+340;indian ocean oriental sweetlips;70
+341;indo-pacific sergeant;17
+342;jellyfish;211
+343;john dory;35
+344;killer whale;2
+345;kingfish;54
+346;koi fish;9
+347;lagenodelphis hosei;74
+348;lampfish;34
+349;lamprey;48
+350;lantern fish;34
+351;lantern shark;16
+352;largemouth bass;49
+353;leafy sea dragon;48
+354;leatherback sea turtle;46
+355;lemon shark;54
+356;leopard shark;38
+357;lion's mane jellyfish;36
+358;lionfish;32
+359;little tunny;21
+360;lizardfish;20
+361;lobodon carcinophagus;51
+362;lobster;30
+363;loggerhead sea turtle;22
+364;long-finned pike;49
+365;longfin eel;38
+366;longlegged spiny lobster;11
+367;longnose batfish;24
+368;lontra canadensis;1
+369;loosejaw;11
+370;mackerel shark;17
+371;macrobrachium rosenbergii;12
+372;magnificent sea anemone;40
+373;mahi-mahi;12
+374;maja squinado;11
+375;mako shark;18
+376;malabar grouper;10
+377;manatee;83
+378;manta ray;69
+379;mantis shrimp;53
+380;many spotted sweetlip;17
+381;map puffer;10
+382;marilin;2
+383;marlin;37
+384;marsh crab;50
+385;maurolicus;41
+386;mediterranean jellyfish;117
+387;megadyptes antipodes;47
+388;megamouth shark;39
+389;megaptera novaeangliae;14
+390;menhaden;71
+391;meyer's butterflyfish;51
+392;mimic octopus;41
+393;mirounga angustirostris;82
+394;mobula ray;141
+395;mole crab;86
+396;monachu;32
+397;monodon monoceros;28
+398;moon jellyfish;289
+399;moorish idol;157
+400;moray eel;56
+401;moringa eel;44
+402;mud crab;88
+403;mugil cephalus;79
+404;mushroom leather coral;10
+405;mussel;483
+406;napolean wrasse;53
+407;nautilus;38
+408;needlefish;68
+409;neophoca cinerea;58
+410;nudibranch;45
+411;nurse shark;83
+412;oarfish;40
+413;ocean sunfish;40
+414;ocellaris clownfish;10
+415;ocellate phyllidia;10
+416;octopus;48
+417;octopus cyanea;29
+418;octopus maorum;25
+419;octopus marginatus;27
+420;octopus mimus;12
+421;octopus tetricus;34
+422;odontodactylus scyllarus;34
+423;olindias formosa;42
+424;oliva porphyria;25
+425;oncorhynchus kisutch;50
+426;oncorhynchus mykiss;43
+427;orca;62
+428;orcinus orca;15
+429;oreochromis niloticus;17
+430;ornate spiny lobster;23
+431;osteoglossum bicirrhosum;12
+432;ostrea edulis;54
+433;otaria flavescens;122
+434;otter;1
+435;oyster;382
+436;paddlefish;99
+437;pagophilus groenlandicus;60
+438;pagrus major;15
+439;painted spiny lobster;11
+440;palechin morays;13
+441;palinurus delagoae;30
+442;panulirus argus;35
+443;panulirus interruptus;51
+444;panulirus ornatus;30
+445;parastichopus parvimensis;21
+446;parrotfish;59
+447;patinopecten yessoensis;96
+448;peacock mantis shrimp;57
+449;pearsonothuria graeffei;31
+450;pecten maximus;175
+451;pederson cleaner shrimp;49
+452;pegasus sea moth;41
+453;pelagia noctiluca;36
+454;pencil sea urchin;40
+455;perca flavescens;24
+456;perch;45
+457;physalia physalis;53
+458;pike;45
+459;pilchard;121
+460;pink anemone fish;15
+461;pinnate batfish;10
+462;pipefish;51
+463;pistol shrimp;34
+464;pizza anemone;10
+465;plaice;41
+466;plankto;10
+467;planospira scalaris;16
+468;pleurotomaria mammilla;13
+469;pomacanthus imperator;10
+470;porcelain crab;47
+471;porcupinefish;52
+472;port jackson shark;57
+473;portuguese man o' war;52
+474;portunus trituberculatus;30
+475;potato grouper;11
+476;powder blue tang fish;184
+477;predatory sharks;12
+478;pterois volitans;10
+479;pufferfish;29
+480;pumpkinseed sunfish;1
+481;purple shore crab;9
+482;pygmy seahorse;21
+483;pygoscelis adeliae;90
+484;pygoscelis antarcticus;92
+485;pygoscelis papua;118
+486;ray;6
+487;razor clam;72
+488;razorfish;131
+489;red king crab;9
+490;red lionfish;11
+491;red snapper;50
+492;red tailed butterfly fish;25
+493;redtail butterflyfish;6
+494;regal tang fish;22
+495;rhinomuraena quaesita;36
+496;rhizostoma pulmo;49
+497;rhopilema esculentum;79
+498;ribbon eel;22
+499;ribbonfish;42
+500;sabellidae;1
+501;saccostrea cucullata;64
+502;salmo salar;36
+503;salp;3
+504;salvelinus fontinalis;10
+505;sawshark;23
+506;scaleless dragonfish;1
+507;scallop;5
+508;scorpionfish;26
+509;sculpin;27
+510;sea anemone;567
+511;sea bass;12
+512;sea cucumber;26
+513;sea fan;66
+514;sea hare;4
+515;sea nettle;3
+516;sea robin;2
+517;sea slug;31
+518;sea snail;23
+519;sea snake;1
+520;sea spider;2
+521;sea star;53
+522;sea turtle;33
+523;sea urchin;308
+524;sea whip;189
+525;sea ​​anemone;8
+526;seadragon;31
+527;seagrape;2
+528;seagrass;1
+529;seagull;11
+530;seahorse;30
+531;seal;10
+532;sealion;2
+533;seashell;30
+534;seaweed;26
+535;sepia latimanus;49
+536;sepia officinalis;39
+537;sepiola atlantica;42
+538;sepioloidea lineolata;44
+539;sepioteuthis australis;63
+540;sepioteuthis lessoniana;50
+541;sepioteuthis sepioidea;51
+542;sergeant major;58
+543;serranidae;28
+544;seven-gill shark;27
+545;shark;76
+546;sharksucker;11
+547;shrimp;126
+548;shrimp goby;23
+549;shrimpfish;101
+550;sixgill shark;30
+551;skipjack tuna;73
+552;skunk clownfish;13
+553;sleeper goby;68
+554;sleeper shark;51
+555;slipper lobster;81
+556;small marine creatures;12
+557;small swimming crab;10
+558;smallmouth bass;60
+559;smooth shore crab;23
+560;snake eel;37
+561;snake pipefish;46
+562;snake-like morays;10
+563;snakehead;1
+564;snapper;141
+565;snapping turtle;4
+566;snow crab;51
+567;soft coral;72
+568;soldierfish;280
+569;sole;11
+570;sousa chinensis;35
+571;south american lungfish;40
+572;spaghetti eel;26
+573;sperm whale;65
+574;spheniscus magellanicus;75
+575;spider crab;50
+576;spiny eel;33
+577;spiny lobster;48
+578;sponge;110
+579;sponge coral;5
+580;sponge crab;10
+581;spot-fin porcupinefish;10
+582;spotfin lionfish;10
+583;spotted eagle rays;14
+584;spotted sharpnose puffer;10
+585;squat lobster;41
+586;squid;62
+587;squilla empusa;27
+588;squirrelfish;38
+589;staghorn coral;55
+590;starfish;137
+591;stargazer fish;19
+592;starry flounder;17
+593;stenella coeruleoalba;57
+594;steno bredanensis;52
+595;stichopus chloronotus;28
+596;stingray;35
+597;stomolophus meleagris;65
+598;stone crab;18
+599;stonefish;11
+600;striped bass;40
+601;striped marlin;9
+602;strombus gigas;44
+603;strongylocentrotus franciscanus;116
+604;sturgeon;26
+605;sunfish;15
+606;surgeonfish;78
+607;swell shark;11
+608;swordfish;10
+609;symbiotic shrimp;23
+610;table coral;80
+611;teira batfish;14
+612;testudo hermanni;47
+613;thelenota ananas;39
+614;thenus orientalis;56
+615;thresher shark;17
+616;thunnus thynnus;146
+617;tiger shark;40
+618;tiger tail seahorse;10
+619;tilefish;22
+620;titan triggerfish;12
+621;tonna galea;39
+622;trachemys scripta elegans;41
+623;triggerfish;24
+624;triplefin;21
+625;trumpetfish;35
+626;tube anemone;25
+627;tube sponge;13
+628;tube-dwelling anemone;26
+629;tuna;23
+630;turbinella pyrum;70
+631;turbo marmoratus;37
+632;turbot;10
+633;turritella communis;13
+634;turtle;6
+635;uca pugnax;21
+636;unicornfish;42
+637;upside-down jellyfish;57
+638;vampire squid;5
+639;variable coral crab;11
+640;viperfish;13
+641;voluta musica;63
+642;walleye;23
+643;whale;37
+644;whale shark;84
+645;whelk;28
+646;whip coral;19
+647;white marlin;4
+648;white shark;2
+649;whitemouth morays;11
+650;whitespotted boxfish;11
+651;whitetip reef shark;77
+652;whiting;24
+653;winter flounder;3
+654;wobbegong shark;25
+655;wolf eel;24
+656;wrasse;29
+657;xenophora pallidula;33
+658;yellow boxfish;11
+659;yellow mask angelfish;11
+660;yellow mask surgeonfish;11
+661;yellow tang fish;27
+662;yellow-edged moray;14
+663;yellowfin tuna;37
+664;yellowmargin triggerfish;10
+665;zalophus californianus;62
+666;zebra crab;12
+667;zebra moray;11
+668;zebra shark;11
+669;zidona dufresnei;16

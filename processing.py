@@ -198,8 +198,35 @@ def process_category(dataset):
         "unicorn fish": "unicornfish",
         "yellowfin": "yellowfin tuna",
         "pink anemone fis": "pink anemone fish",
-        "red tailed butterfly fis": "red tailed butterfly fish"
+        "red tailed butterfly fis": "red tailed butterfly fish",
+        "goby fish": "goby",
+        "sea fans": "sea fan",
+        "sea grape": "seagrape",
+
+        "atlantic blue marlin": "marlin",
+        "sailfish": "marilin",
+        "benthic cnidarian": "coral",
+        "pacific bluefin": "tuna",
+        "atlantic bluefin": "tuna",
+        "southern bluefin": "tuna",
+        "chimera monstrosa": "chimaera",
+        "finback": "whale",
+        "giant frogfish": "frogfish",
+        "goby fish": "goby",
+        "humpback": "whale",
+        "right whale": "whale",
+        "minke whale": "whale",
+        "narwhal": "whale",
+        "megalodon": "whale",
+        "large shark": "fish",
+        "sea worm": "feather duster worm",
+        "kind crab": "red king crab",
+        # "lontra canadensis": "otter",
     }
+    #by html
+    #refine imageid 7350 -> marlin
+    #refine imageid 7761 -> bigeye tuna
+    #refine imageid 11569 -> fish -> starry flounder
 
     for annotation in dataset.get_all_annotations():
         category = annotation.get_category()
