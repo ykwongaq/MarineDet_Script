@@ -232,7 +232,7 @@ def category_analysis(dataset, output_path):
         category = annotation.get_category()
         category_id = annotation.get_category_id()
         if category_id not in category_count:
-            category_count[category_id] = (category, 0)
+            category_count[category_id] = (category, 1)
         else:
             # Check is the category_name match or not
             assert category_count[category_id][0] == category, f"Category name mismatch {category_count[category_id][0]} vs {category}"
@@ -271,5 +271,5 @@ def main(json_path):
 
 
 if __name__ == "__main__":
-    json_path = "./combine.json"
+    json_path = "../combine.json"
     main(json_path)
