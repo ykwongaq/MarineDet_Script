@@ -170,6 +170,35 @@ def process_category(dataset):
         "yellow mask surgeron fis": "yellow mask surgeonfish",
         "yellow-edged morays": "yellow-edged moray",
         "croal": "coral",
+
+        "albacore tuna": "albacore",
+        "anemone": "sea anemone",
+        "angel shark": "angelshark",
+        "bare-tailed goatfish": "bare tailed goatfish",
+        "butterfly fish": "butterflyfish",
+        "chionoecetes opilio underwater": "chionoecetes opilio",
+        "clown fish": "clownfish",
+        "common octopus": "octopus",
+        "common decorator crab": "decorator crab",
+        "common whelk": "whelk",
+        "crinoids": "crinoid",
+        "jelly fish": "jellyfish",
+        "longtail": "tuna",
+        "manta": "manta ray",
+        "octopuscoral": "coral",
+        "porcupine fish": "porcupinefish",
+        "scsllop": "scallop",
+        "sea eel": "eel",
+        "sea snell": "seashell",
+        "sea ship": "sea whip",
+        "sea urchine": "sea urchin",
+        "sea weed": "seaweed",
+        "sea shell": "seashell",
+        "shell": "seashell",
+        "unicorn fish": "unicornfish",
+        "yellowfin": "yellowfin tuna",
+        "pink anemone fis": "pink anemone fish",
+        "red tailed butterfly fis": "red tailed butterfly fish"
     }
 
     for annotation in dataset.get_all_annotations():
@@ -203,7 +232,7 @@ def category_analysis(dataset, output_path):
         category = annotation.get_category()
         category_id = annotation.get_category_id()
         if category_id not in category_count:
-            category_count[category_id] = (category, 1)
+            category_count[category_id] = (category, 0)
         else:
             # Check is the category_name match or not
             assert category_count[category_id][0] == category, f"Category name mismatch {category_count[category_id][0]} vs {category}"
