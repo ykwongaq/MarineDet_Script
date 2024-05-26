@@ -170,6 +170,35 @@ def process_category(dataset):
         "yellow mask surgeron fis": "yellow mask surgeonfish",
         "yellow-edged morays": "yellow-edged moray",
         "croal": "coral",
+
+        "albacore tuna": "albacore",
+        "anemone": "sea anemone",
+        "angel shark": "angelshark",
+        "bare-tailed goatfish": "bare tailed goatfish",
+        "butterfly fish": "butterflyfish",
+        "chionoecetes opilio underwater": "chionoecetes opilio",
+        "clown fish": "clownfish",
+        "common octopus": "octopus",
+        "common decorator crab": "decorator crab",
+        "common whelk": "whelk",
+        "crinoids": "crinoid",
+        "jelly fish": "jellyfish",
+        "longtail": "tuna",
+        "manta": "manta ray",
+        "octopuscoral": "coral",
+        "porcupine fish": "porcupinefish",
+        "scsllop": "scallop",
+        "sea eel": "eel",
+        "sea snell": "seashell",
+        "sea ship": "sea whip",
+        "sea urchine": "sea urchin",
+        "sea weed": "seaweed",
+        "sea shell": "seashell",
+        "shell": "seashell",
+        "unicorn fish": "unicornfish",
+        "yellowfin": "yellowfin tuna",
+        "pink anemone fis": "pink anemone fish",
+        "red tailed butterfly fis": "red tailed butterfly fish"
     }
 
     for annotation in dataset.get_all_annotations():
@@ -242,5 +271,5 @@ def main(json_path):
 
 
 if __name__ == "__main__":
-    json_path = "./combine.json"
+    json_path = "../combine.json"
     main(json_path)
