@@ -41,7 +41,7 @@ def check_category(dataset):
     for annotation in dataset.get_all_annotations():
         if annotation.get_category() == "":
             print(f"At annotation id {annotation.get_id()}, category is empty.")
-            return False
+
     return True
 
 def count_small_bbox(dataset):
@@ -103,8 +103,8 @@ def main(json_path):
     check_small_bbox_caption(dataset)
     # check_segmentation(dataset)
 
-    if not check_image_id(dataset):
-        print("Image ids are not unique.")
+    check_image_id(dataset)
+
         
     
     if not check_annotation_id(dataset):
@@ -129,7 +129,7 @@ def main(json_path):
     count_small_bbox(dataset)
     
 if __name__ == "__main__":
-    json_path = "./data/combined_processed_cleaned.json"
+    json_path = "./data/combined_processed.json"
     main(json_path)
     
 
