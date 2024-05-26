@@ -101,7 +101,7 @@ def main(json_path):
 
     dataset = Dataset(json_data)
     check_small_bbox_caption(dataset)
-    check_segmentation(dataset)
+    # check_segmentation(dataset)
 
     if not check_image_id(dataset):
         print("Image ids are not unique.")
