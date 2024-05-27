@@ -47,14 +47,14 @@ def check_category(dataset):
 def count_small_bbox(dataset):
     count = 0
     for annotation in dataset.get_all_annotations():
-        if annotation.get_area() < 1024:
+        if annotation.is_small_bbox():
             count += 1
     print(f"Number of small bounding box: {count}")
 
 def check_small_bbox_caption(dataset):
     print("Checking small bounding box caption...")
     for annotation in dataset.get_all_annotations():
-        if annotation.get_area() < 1024 and annotation.get_caption() != "":
+        if annotation.is_small_bbox() and annotation.get_caption() != "":
             print(f"At annotation id {annotation.get_id()}, it is a small bbox, and the caption should be empty.")
 
 def check_segmentation(dataset):
@@ -70,7 +70,7 @@ def check_caption(dataset):
         have_caption = False
         for annotation in image.get_annotations():
             
-            if annotation.get_area() < 1024:
+            if annotation.is_small_bbox():
                 # Small bounding box does not require caption
                 continue
             
@@ -155,7 +155,7 @@ def main(json_path):
     check_double_space(dataset)
     check_small_bbox_label(dataset)
     check_small_bbox_negative_tags(dataset)
-    
+
     count_small_bbox(dataset)
     
 if __name__ == "__main__":
