@@ -52,6 +52,12 @@ class Annotation:
 
     def set_negative_tags(self, negative_tags):
         self.json_data["negative_tags"] = negative_tags
+
+    def get_label(self):
+        return self.json_data["label"]
+    
+    def get_negative_tags(self):
+        return self.json_data["negative_tags"]
     
 class Image:
     def __init__(self, image_data, anno_datas):
