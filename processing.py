@@ -168,6 +168,18 @@ def category_analysis(dataset, output_path):
         for category_id, (category, count) in category_count.items():
             f.write(f"{category_id};{category};{count}\n")
 
+def clean_small_bbox_label(dataset):
+    for annotation in dataset.get_all_annotations():
+        if annotation.is_small_bbox():
+            annotation.set_label(-1)
+    return dataset
+
+def clean_small_bbox_negative_tags(dataset):
+    for annotation in dataset.get_all_annotations():
+        if annotation.is_small_bbox():
+            annotation.set_negative_tags("")
+    return dataset
+
 def rearrange_ids(dataset):
     # Rearrange annotation ids
     for i, anno in enumerate(dataset.get_all_annotations()):
@@ -192,10 +204,11 @@ def main(json_path):
     # process_category must be called before dataset.define_category_id()
     dataset = process_category(dataset)
     dataset = process_caption(dataset)
-
-    # Rearrange the category id
     dataset = define_category_id(dataset)
     dataset = rearrange_ids(dataset)
+    dataset = clean_small_bbox_label(dataset)
+    dataset = clean_small_bbox_negative_tags(dataset)
+
     category_analysis(dataset, "./data/category_analysis.txt")
 
     print(f"There are in total {len(dataset.get_images())} images and {len(dataset.get_all_annotations())} annotations in the combined dataset.")

@@ -46,6 +46,12 @@ class Annotation:
     
     def set_segmentation(self, segmentation):
         self.json_data["segmentation"] = segmentation
+
+    def set_label(self, label):
+        self.json_data["label"] = label
+
+    def set_negative_tags(self, negative_tags):
+        self.json_data["negative_tags"] = negative_tags
     
 class Image:
     def __init__(self, image_data, anno_datas):

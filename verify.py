@@ -104,6 +104,22 @@ def check_double_space(dataset):
                 print(f"At annotation id {annotation.get_id()}, caption contains double space.")
     return True
 
+def check_small_bbox_label(dataset):
+    print("Checking small bbox label...")
+    for annotation in dataset.get_all_annotations():
+        if annotation.is_small_bbox():
+            if annotation.get_label() != -1:
+                print(f"At annotation id {annotation.get_id()}, label should be -1.")
+    return True
+
+def check_small_bbox_negative_tags(dataset):
+    print("Checking small bbox negative tags...")
+    for annotation in dataset.get_all_annotations():
+        if annotation.is_small_bbox():
+            if annotation.get_negative_tags() != "":
+                print(f"At annotation id {annotation.get_id()}, negative tags should be empty.")
+    return True
+
 def main(json_path):
     with open(json_path, 'r', encoding="utf-8") as f:
         print(f"Reading {json_path}...")
@@ -135,7 +151,11 @@ def main(json_path):
     
     if not check_caption(dataset):
         print("Caption in annotation is empty or contains '<image>' or 'description:'.")
-        
+    
+    check_double_space(dataset)
+    check_small_bbox_label(dataset)
+    check_small_bbox_negative_tags(dataset)
+    
     count_small_bbox(dataset)
     
 if __name__ == "__main__":
